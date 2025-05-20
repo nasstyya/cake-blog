@@ -1,0 +1,28 @@
+section {
+    max-width: 1000px;
+    margin: auto; /* вебсайт в центре окна браузера */
+}
+
+.row {
+
+    margin: 8px -16px;
+
+}
+.row,
+.row > .column {
+    padding: 8px;
+}
+.column {
+    float: left;
+    width: 25%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
