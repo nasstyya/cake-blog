@@ -1,16 +1,13 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru"> <!-- Изменил на русский язык -->
 <head>
     <meta charset="UTF-8">
-    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelancer portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="home.css">
-   
+    <link rel="stylesheet" href="./css/home.css"> <!-- Добавил ./ перед путем -->
 </head>
 <body>
     <nav class="nav">
@@ -18,16 +15,13 @@
             <div class="nav-row">
                 <a href="./index.html" class="logo"><strong>Freelancer</strong> portfolio</a>
 
-            
-             
-
                 <ul class="nav-list">
-                     <li class="nav-list__item"><a href="home.html" class="nav-list__link nav-list__link--active">Главная</a></li>
-                    <li class="nav-list__item"><a href="portfolio.html" class="nav-list__link nav-list__link--active">Портфолио</a></li>
-                    <li class="nav-list__item"><a href="blog.html" class="nav-list__link nav-list__link--active">Блог</a></li>
+                    <li class="nav-list__item"><a href="home.html" class="nav-list__link nav-list__link--active">Главная</a></li>
+                    <li class="nav-list__item"><a href="portfolio.html" class="nav-list__link">Портфолио</a></li> <!-- Убрал --active -->
+                    <li class="nav-list__item"><a href="blog.html" class="nav-list__link">Блог</a></li> <!-- Убрал --active -->
                     <li class="nav-list__item"><a href="prise.html" class="nav-list__link">Цены</a></li>
                     <li class="nav-list__item"><a href="contact.html" class="nav-list__link">Контакты</a></li>
-                    <li><a href="#request"    <li><a <li><a href="#request"    <li><a <li><a href="zayavka.html" class="button highlighted">Оставить заявку</a></li>
+                    <li class="nav-list__item"><a href="zayavka.html" class="button highlighted">Оставить заявку</a></li> <!-- Исправил вложенность -->
                 </ul>
             </div>
         </div>
@@ -36,75 +30,64 @@
     <header class="header">
         <div class="header__wrapper">
             <h1 class="header__title">
-                <strong>Привет, меня зовут  <em>Сергей Яковлев</em></strong> 
+                <strong>Привет, меня зовут <em>Сергей Яковлев</em></strong> 
             </h1>
             <div class="header__text">
-                
+                <!-- Добавьте текст при необходимости -->
             </div>
-            
         </div>
     </header>
 
     <main class="section">
         <div class="container">
             <h2 class="title-1">Обо мне</h2>
-            <ul class="projects">
-                <li class="project">
-                        <h3 class="project__title">
-                            Я профессиональный креативный свадебный и рекламный фотограф, работаю в разных уголках нашей страны.Имею опыт работы более 10 лет. Помогу сохранить воспоминания о важных моментах и эмоциях. Гарантирую живые и уникальные снимки.
-                    
-                            Мои знания и навыки, практический опыт помогают мне добиваться превосходных результатов в выбранном направлении и, я надеюсь, делать мир вокруг немного прекраснее)
-                      
-                            Что главное в фотографии? Для меня, как фотографа - отразить индивидуальность своих героев, оставаться искренним. Я думаю, это важно и для тех, кто приходит ко мне на съемку.</h3>
-                    
-                    </a>
-                </li>
-            </ul>
+            <div class="about-me"> <!-- Добавил обертку -->
+                <p>Я профессиональный креативный свадебный и рекламный фотограф, работаю в разных уголках нашей страны. Имею опыт работы более 10 лет. Помогу сохранить воспоминания о важных моментах и эмоциях. Гарантирую живые и уникальные снимки.</p>
+                <p>Мои знания и навыки, практический опыт помогают мне добиваться превосходных результатов в выбранном направлении и, я надеюсь, делать мир вокруг немного прекраснее.</p>
+                <p>Что главное в фотографии? Для меня, как фотографа - отразить индивидуальность своих героев, оставаться искренним. Я думаю, это важно и для тех, кто приходит ко мне на съемку.</p>
+            </div>
         </div>
     </main>
 
-        
+    <section class="section"> <!-- Добавил section -->
+        <div class="container">
             <h2 class="title-1">Примеры работ</h2>
- <div class="portfolio-container">
-        <div class="slider">
-            <div class="slide">
-                <img src="248547.jpg" alt="Image 1">
-            </div>
-            <div class="slide">
-                <img src="3347411.jpg" alt="Image 2">
-            </div>
-            <div class="slide">
-                <img src="3764179.jpg" alt="Image 3">
+            <div class="portfolio-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="./img/248547.jpg" alt="Пример работы 1"> <!-- Добавил ./img/ -->
+                    </div>
+                    <div class="slide">
+                        <img src="./img/3347411.jpg" alt="Пример работы 2"> <!-- Добавил ./img/ -->
+                    </div>
+                    <div class="slide">
+                        <img src="./img/3764179.jpg" alt="Пример работы 3"> <!-- Добавил ./img/ -->
+                    </div>
+                </div>
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
             </div>
         </div>
-        <button class="prev">❮</button>
-        <button class="next">❯</button>
-    </div>
-
-
-
+    </section>
 
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <ul class="social">
-                    <li><a href="vk.com/sergeyyakovlev123"><img src="facebook-icon.png" alt="VK"></a></li>
-                     <li><a href="t.me/sergeyyakovlev123"><img src="instagram-icon.png" alt="Telegram"></a></li>
-                    <li><a href="wa.me/9871234567"><img src="facebook-icon.png" alt="WhatsApp"></a></li>
-                   
-               </ul>
-        <p>Контактные данные: Телефон:
-8 (987) 123-45-67
-</p>
-        
-        <p>E-mail:
-sergey.yakovlev@photo.com
-</p>
-              
+                    <li><a href="https://vk.com/sergeyyakovlev123"><img src="./img/facebook-icon.png" alt="VK"></a></li> <!-- Добавил https:// -->
+                    <li><a href="https://t.me/sergeyyakovlev123"><img src="./img/instagram-icon.png" alt="Telegram"></a></li> <!-- Добавил https:// -->
+                    <li><a href="https://wa.me/79871234567"><img src="./img/facebook-icon.png" alt="WhatsApp"></a></li> <!-- Исправил номер -->
+                </ul>
+                <div class="contacts">
+                    <p>Контактные данные:</p>
+                    <p>Телефон: <a href="tel:+79871234567">8 (987) 123-45-67</a></p> <!-- Добавил ссылку -->
+                    <p>E-mail: <a href="mailto:sergey.yakovlev@photo.com">sergey.yakovlev@photo.com</a></p> <!-- Добавил ссылку -->
+                </div>
             </div>
         </div>
     </footer>
-  <script>
+
+    <script>
         let slideIndex = 0;
         showSlides();
 
@@ -116,11 +99,12 @@ sergey.yakovlev@photo.com
             slideIndex++;
             if (slideIndex > slides.length) {slideIndex = 1}
             slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides, 2000); // Измените значение 2000 на время задержки между слайдами в миллисекундах
+            setTimeout(showSlides, 3000); // Увеличил время до 3 секунд
         }
 
         document.querySelector('.prev').addEventListener('click', () => {
             slideIndex -= 2;
+            if (slideIndex < 0) {slideIndex = slides.length - 1}
             showSlides();
         });
 
@@ -129,6 +113,5 @@ sergey.yakovlev@photo.com
         });
     </script>
     <script src="./js/main.js"></script>
-
 </body>
 </html>
